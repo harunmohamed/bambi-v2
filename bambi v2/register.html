@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sign Up</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+body{
+  background: #000;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 45%;
+  padding: 10px;
+  height: 500px; /* Should be removed. Only for demonstration */
+  margin-right:5%;
+}
+h2{
+  color: #F9E9C8;
+  text-align:center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+img{
+  width:100%;
+  height:100%;
+  border: 3px solid #F9E9C8;
+  border-radius: 5px;
+  padding: 5px;
+}
+.content{
+  color: gray;
+  font-size: 18px;
+  text-align:left;
+}
+input{
+  background:#162023;
+  border: none;
+  outline:none;
+  border-radius: 5px;
+  height: 30px;
+  padding: 5px;
+  color: gold;
+  text-align:center;
+}
+span{
+  margin-right:10px;
+  border:1px solid #F9E9C8;
+  padding:10px;
+  border-radius:5px;
+}
+.active{
+  background:#F9E9C8;
+  color:#000;
+  border:1px solid gray;
+}
+span:hover{
+  background:#F9E9C8;
+  color:#000;
+  border:1px solid gray;
+}
+a{
+  text-decoration: none;
+  color:#F9E9C8;
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+</head>
+<body>
+
+<h2>Welcome to Bambi! Sign Up Now</h2>
+
+<div class="row">
+  <div class="column">
+    <img src="2.png" alt="logo">
+  </div>
+  <div class="column content">
+    <p>
+      My name is <input type="text"> and I am <input type="text"> years <br/>
+    </p>
+
+    <p>
+      I am from <input type="text" name="" id="">
+    </p>
+
+    <p>
+      I am currently studying <input type="text" name="" id="">. <br/>
+    </p>
+
+    <p>
+      <input type="email" name="" id=""> is my email and <input type="password" name="" id=""> isn't a bad password <br>
+    </p>
+
+    <p>I am currently interested in</p> <br>
+
+      <div class="interests">
+        <span>Art</span>
+        <span>Poetry</span>
+        <span class="active">Travel</span>
+        <span class="active">Coding</span>
+        <span>Skating</span>
+      </div>
+      <br>
+      <div>
+        <br>
+        <span><a href="home.html">Sign Up</a></span>
+      </div>
+      <br>
+    <small>Already have an account?<a href="login.html"> Login Now</a></small>
+  </div>
+</div>
+
+</body>
+</html>
